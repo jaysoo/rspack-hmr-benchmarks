@@ -7,7 +7,7 @@ export interface Ui1Props { }
 export function Ui1(props: Ui1Props) {
   return (
     <div className={styles['container']}>
-      <h1>Welcome to Ui1! ({Date.now()})</h1>
+      <h1>Welcome to Ui1! (<span data-testid="time">{Date.now()}</span>)</h1>
     </div>
   );
 }
