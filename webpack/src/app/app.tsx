@@ -1003,7 +1003,7 @@ import { Ui1000 } from '@acme/ui-1000';
 export function App() {
   return (
     <div className={styles['container']} data-testid="welcome">
-      Hello708 (6)
+      Hello (9)
       <Ui1 />
       <Ui2 />
       <Ui3 />
