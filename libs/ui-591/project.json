@@ -1,0 +1,16 @@
+{
+  "name": "ui-591",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-591/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-591/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

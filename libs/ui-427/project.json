@@ -1,0 +1,16 @@
+{
+  "name": "ui-427",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-427/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-427/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

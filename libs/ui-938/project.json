@@ -1,0 +1,16 @@
+{
+  "name": "ui-938",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-938/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-938/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

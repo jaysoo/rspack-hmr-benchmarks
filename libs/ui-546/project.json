@@ -1,0 +1,16 @@
+{
+  "name": "ui-546",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-546/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-546/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

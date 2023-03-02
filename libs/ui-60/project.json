@@ -1,0 +1,16 @@
+{
+  "name": "ui-60",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-60/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-60/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

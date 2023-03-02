@@ -1,0 +1,16 @@
+{
+  "name": "ui-514",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-514/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-514/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

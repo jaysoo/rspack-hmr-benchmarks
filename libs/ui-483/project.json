@@ -1,0 +1,16 @@
+{
+  "name": "ui-483",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-483/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-483/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

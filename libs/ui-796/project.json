@@ -1,0 +1,16 @@
+{
+  "name": "ui-796",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-796/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-796/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

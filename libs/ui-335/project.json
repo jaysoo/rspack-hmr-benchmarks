@@ -1,0 +1,16 @@
+{
+  "name": "ui-335",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-335/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-335/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

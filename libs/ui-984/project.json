@@ -1,0 +1,16 @@
+{
+  "name": "ui-984",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-984/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-984/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

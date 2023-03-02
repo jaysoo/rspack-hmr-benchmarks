@@ -1,0 +1,16 @@
+{
+  "name": "ui-130",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-130/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-130/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

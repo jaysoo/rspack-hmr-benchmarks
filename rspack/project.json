@@ -1,0 +1,45 @@
+{
+  "name": "rspack",
+  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "rspack/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/rspack:rspack",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "web",
+        "outputPath": "dist/rspack",
+        "main": "rspack/src/main.tsx",
+        "tsConfig": "rspack/tsconfig.app.json",
+        "rspackConfig": "rspack/rspack.config.js",
+        "assets": [
+          "rspack/src/favicon.ico",
+          "rspack/src/assets"
+        ]
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "optimization": true,
+          "sourceMap": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/rspack:dev-server",
+      "options": {
+        "buildTarget": "rspack:build:development"
+      },
+      "configurations": {
+        "development": {},
+        "production": {
+          "buildTarget": "rspack:build:production"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "ui-787",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-787/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-787/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

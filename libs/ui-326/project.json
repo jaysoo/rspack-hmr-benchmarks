@@ -1,0 +1,16 @@
+{
+  "name": "ui-326",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-326/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-326/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

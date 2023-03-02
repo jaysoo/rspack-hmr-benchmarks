@@ -1,0 +1,16 @@
+{
+  "name": "ui-979",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-979/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-979/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

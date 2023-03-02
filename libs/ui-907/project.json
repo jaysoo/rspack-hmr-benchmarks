@@ -1,0 +1,16 @@
+{
+  "name": "ui-907",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-907/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-907/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

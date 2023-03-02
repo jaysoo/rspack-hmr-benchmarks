@@ -1,0 +1,16 @@
+{
+  "name": "ui-784",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-784/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-784/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

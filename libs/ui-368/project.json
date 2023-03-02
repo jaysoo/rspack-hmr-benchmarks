@@ -1,0 +1,16 @@
+{
+  "name": "ui-368",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-368/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-368/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

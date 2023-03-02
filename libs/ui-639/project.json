@@ -1,0 +1,16 @@
+{
+  "name": "ui-639",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ui-639/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["ui-639/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}
