@@ -24,6 +24,7 @@
     "@nrwl/webpack": "15.8.2",
     "@nrwl/workspace": "15.8.2",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
+    "@rspack/cli": "^0.0.23",
     "@rspack/core": "^0.0.23",
     "@rspack/dev-server": "^0.0.23",
     "@rspack/plugin-minify": "^0.0.23",

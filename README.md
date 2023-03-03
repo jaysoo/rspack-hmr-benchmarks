@@ -20,6 +20,16 @@ node watch.mjs
 
 Make a change to either `app.tsx` (root) or `libs/ui-1/src/lib/ui-1.tsx` (leaf) and obverse HMR timestamp compared to the one from watch process. Take that time and the one in UI and that's the total HMR time in milliseconds.
 
+For measuring dev-server starts, run the `measure-dev-server-startup.mjs` file.
+
+```bash
+node measure-dev-server-startup.mjs rspack
+node measure-dev-server-startup.mjs webpack
+```
+
+The resulting time is the difference between calling `serve` and when the UI loads in puppeteer.
+
+
 ## Numbers
 
 We're mostly focused on HMR, but I've also included cold start times and build times.
