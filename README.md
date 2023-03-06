@@ -42,12 +42,12 @@ We're mostly focused on HMR, but I've also included cold start times and build t
 
 |         | rspack (dev start)  | rspack (root) | rspack (leaf) | webpack (dev start)  | webpack (root) | webpack (leaf) |
 | ------- | ------------------- | ------------- | ------------- | -------------------- | -------------- | -------------- |
-| 1       | 2353                | 572           | 531           | 6957                 | 1906           | 752            |
-| 2       | 2115                | 571           | 555           | 6810                 | 1821           | 785            |
-| 3       | 2131                | 590           | 531           | 6867                 | 1790           | 844            |
-| 4       | 2259                | 595           | 523           | 6816                 | 1753           | 998            |
-| 5       | 2179                | 585           | 528           | 6764                 | 1937           | 924            |
-| Average | 2207.4              | 582.6         | 533.6         | 6842.8               | 1841.4         | 860.6          |
+| 1       | 3638                | 1055          | 934           | 19129                | 5191           | 4390           |
+| 2       | 3598                | 1150          | 907           | 18580                | 5181           | 4322           |
+| 3       | 3603                | 1218          | 930           | 18790                | 5102           | 4372           |
+| 4       | 3568                | 1211          | 964           | 18872                | 5240           | 4561           |
+| 5       | 3642                | 1324          | 959           | 19995                | 5260           | 4624           |
+| Average | 3609.8              | 1191.6        | 938.8         | 19073.2              | 5194.8         | 4453.8         |
 
 
 ### Production build
@@ -73,7 +73,7 @@ Summary
 
 ## Notes
 
-- For root component (large with many child components), rspack is **3.16x faster** than webpack
-- For leaf component (small with no child components), rspack is **1.61x faster** than webpack
-- For dev-server starts (time from serve to rendered), rspack is **3.10x faster** than webpack
-- For production builds, rspack is **1.77x faster** than webpack
+- For root component (large with many child components), rspack is **4.36x faster** than webpack
+- For leaf component (small with no child components), rspack is **4.74x faster** than webpack
+- For dev-server starts (time from serve to rendered), rspack is **5.28x faster** than webpack
+- For production builds, rspack is **3.79x faster** than webpack
