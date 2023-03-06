@@ -59,18 +59,16 @@ Benchmarks are run using [`hyperfine`](https://github.com/sharkdp/hyperfine) wit
 $ hyperfine "npx nx build rspack --skip-nx-cache" "npx nx build webpack --skip-nx-cache"
 
 Benchmark 1: npx nx build rspack --skip-nx-cache
-  Time (mean ± σ):     10.409 s ±  0.137 s    [User: 15.966 s, System: 1.271 s]
-  Range (min … max):   10.277 s … 10.777 s    10 runs
-
-  Warning: The first benchmarking run for this command was significantly slower than the rest (10.777 s). This could be caused by (filesystem) caches that were not filled until after the first run. You should consider using the '--warmup' option to fill those caches before the actual benchmark. Alternatively, use the '--prepare' option to clear the caches before each timing run.
+  Time (mean ± σ):     14.929 s ±  0.542 s    [User: 21.187 s, System: 1.783 s]
+  Range (min … max):   14.280 s … 15.756 s    10 runs
 
 Benchmark 2: npx nx build webpack --skip-nx-cache
-  Time (mean ± σ):     21.766 s ±  0.295 s    [User: 46.803 s, System: 2.966 s]
-  Range (min … max):   21.440 s … 22.338 s    10 runs
+  Time (mean ± σ):     56.533 s ±  6.497 s    [User: 63.501 s, System: 4.681 s]
+  Range (min … max):   47.061 s … 68.796 s    10 runs
 
 Summary
   'npx nx build rspack --skip-nx-cache' ran
-    2.09 ± 0.04 times faster than 'npx nx build webpack --skip-nx-cache'
+    3.79 ± 0.46 times faster than 'npx nx build webpack --skip-nx-cache'
 ```
 
 ## Notes
