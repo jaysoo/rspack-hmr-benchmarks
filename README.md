@@ -40,14 +40,14 @@ We're mostly focused on HMR, but I've also included cold start times and build t
 - Time in ms
 - Tested on Intel i9 MacBook Pro
 
-|         | rspack (cold start) | rspack (root) | rspack (leaf) | webpack (cold start) | webpack (root) | webpack (leaf) |
+|         | rspack (dev start)  | rspack (root) | rspack (leaf) | webpack (dev start)  | webpack (root) | webpack (leaf) |
 | ------- | ------------------- | ------------- | ------------- | -------------------- | -------------- | -------------- |
-| 1       | 3484                | 697           | 563           | 20512                | 2121           | 990            |
-| 2       | 3827                | 706           | 576           | 19297                | 2012           | 1095           |
-| 3       | 3822                | 706           | 549           | 20629                | 2168           | 1116           |
-| 4       | 3809                | 714           | 539           | 20525                | 1900           | 1061           |
-| 5       | 3874                | 717           | 528           | 20401                | 1937           | 1063           |
-| Average | 3763.2              | 708.0         | 551.0         | 20272.8              | 2027.6         | 1065.0         |
+| 1       | 2353                | 572           | 531           | 6957                 | 1906           | 752            |
+| 2       | 2115                | 571           | 555           | 6810                 | 1821           | 785            |
+| 3       | 2131                | 590           | 531           | 6867                 | 1790           | 844            |
+| 4       | 2259                | 595           | 523           | 6816                 | 1753           | 998            |
+| 5       | 2179                | 585           | 528           | 6764                 | 1937           | 924            |
+| Average | 2207.4              | 582.6         | 533.6         | 6842.8               | 1841.4         | 860.6          |
 
 
 ### Production build
@@ -57,23 +57,22 @@ Benchmarks are run using [`hyperfine`](https://github.com/sharkdp/hyperfine) wit
 
 ```bash
 $ hyperfine "npx nx build rspack --skip-nx-cache" "npx nx build webpack --skip-nx-cache"
-
 Benchmark 1: npx nx build rspack --skip-nx-cache
-  Time (mean ± σ):      7.320 s ±  0.177 s    [User: 12.714 s, System: 0.957 s]
-  Range (min … max):    7.159 s …  7.632 s    10 runs
+  Time (mean ± σ):      4.899 s ±  0.036 s    [User: 8.032 s, System: 0.578 s]
+  Range (min … max):    4.837 s …  4.954 s    10 runs
 
 Benchmark 2: npx nx build webpack --skip-nx-cache
-  Time (mean ± σ):     19.114 s ±  0.546 s    [User: 39.448 s, System: 4.221 s]
-  Range (min … max):   18.392 s … 20.039 s    10 runs
+  Time (mean ± σ):      8.676 s ±  0.879 s    [User: 13.156 s, System: 1.274 s]
+  Range (min … max):    7.828 s …  9.980 s    10 runs
 
 Summary
   'npx nx build rspack --skip-nx-cache' ran
-    2.61 ± 0.10 times faster than 'npx nx build webpack --skip-nx-cache'
+    1.77 ± 0.18 times faster than 'npx nx build webpack --skip-nx-cache'
 ```
 
 ## Notes
 
-- For root component (large with many child components), rspack is **2.86x faster** than webpack
-- For leaf component (small with no child components), rspack is **1.93x faster** than webpack
-- For cold starts (time from serve to rendered), rspack is **5.39x faster** than webpack
-- For production builds, rspack is **2.61x faster** than webpack
+- For root component (large with many child components), rspack is **3.16x faster** than webpack
+- For leaf component (small with no child components), rspack is **1.61x faster** than webpack
+- For dev-server starts (time from serve to rendered), rspack is **3.10x faster** than webpack
+- For production builds, rspack is **1.77x faster** than webpack
